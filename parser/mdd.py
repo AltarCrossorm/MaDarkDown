@@ -39,14 +39,18 @@ def mdd_parse(*args:str) -> None:
                 lines = MDDf.read().split('\n') # Make the variable as a list of lines
                 
                 for line in lines:
-                        match line:
+                        match line: # Mode first-character (headers, tables, notes, variables, ...)
                                 case header if line.startswith('#'):
                                         size = list(line)
                                         i=0
                                         while size[i] == '#':
                                                 i+=1
-                                        mdd_list.append(MDD_Header(line[i+1:], i))
-                                case _:
+                                        mdd_list.append(MDD_Header(header[i+1:], i))
+                                case var if line.startswith('!var'):
+                                        print(var)
+                                        mdd_list.append(MDD_Text(line))
+                                        
+                                case _: # Now in-line types (bold, italic, code, spoilers, ...)
                                         for char in line:
                                                 pass                                       
                                         mdd_list.append(MDD_Text(line))

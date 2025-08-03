@@ -10,7 +10,7 @@ That's where we are since so long...
 
 -# It alos handle Discord-like subtexts
 
-!var foo:bar /' it Also handle variables, they are invisible when defined and can be used all across the docuent, must be defined before use
+!var foo:bar /' it Also handle variables, they are invisible when defined and can be used all across the docuent, must be defined before use, are treated as text
 
 /'' These are comments by the way
 Multiline comments to be precise
