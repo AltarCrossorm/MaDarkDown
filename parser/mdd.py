@@ -47,7 +47,8 @@ def mdd_parse(*args:str) -> None:
                                                 i+=1
                                         mdd_list.append(MDD_Header(line[i+1:], i))
                                 case _:
-                                        for char in line:                                                        
+                                        for char in line:
+                                                pass                                       
                                         mdd_list.append(MDD_Text(line))
                                 
 

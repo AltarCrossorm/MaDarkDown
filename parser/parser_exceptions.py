@@ -1,5 +1,4 @@
 
-
 class mdd_Parser_Exception(Exception):
         def __init__(self, args: object) -> None:
                 self.message:str = args # type: ignore
