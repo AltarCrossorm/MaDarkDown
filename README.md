@@ -1,7 +1,5 @@
-
-
 # MaDarkDown (MaDark)
-###### Version X.X.X
+###### Version 0.0.1
 
 MaDarkDown is a parser, with the objective of a more recent view of the (in my opinion) old Markdown. It proposes all the Markdown basic features (not counting the GitHub, Obsidian or even RMarkdown enhancements to the language) plus some new ones.
 MaDarkDown is a superset of HTML and not Markdown, making it as the same layer

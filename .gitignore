@@ -7,7 +7,7 @@ __pycache__/
 *.so
 
 *.code-workspace
-
+*.dev.*
 
 # Distribution / packaging
 .Python

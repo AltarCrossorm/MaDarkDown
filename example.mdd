@@ -10,7 +10,7 @@ That's where we are since so long...
 
 -# It alos handle Discord-like subtexts
 
-!var foo:bar /' it Also handle variables, they are invisible when defined and can be used all across the docuent, must be defined before use, are treated as text
+!var{foo:bar} /' This file system can handle variables, they are invisible when defined and can be used all across the docuent, must be defined before use, are treated as text
 
 /'' These are comments by the way
 Multiline comments to be precise
@@ -21,7 +21,7 @@ This is a basic text, and with the following syntax "!{foo}" you can get back th
 
 Note: you can disable getting variable by adding a "\\" before calling it.
 
-> [NOTE#0000
+> [NOTE#000000
 > This is a Note, it can have various colors depending of the Keyword, like
 > - NOTE
 > - INFO
@@ -34,6 +34,9 @@ Note: you can disable getting variable by adding a "\\" before calling it.
 > Its Color can also depend of the # at the end of the note name, must be an integer of 6 numbers
 > The note must end by a closing bracket
 > ]
+
+> This is a classical note, no style, juste like a paraphrase
+> And can be multiline too
 
 |Tables|Markdown-Like|
 |-|-|
