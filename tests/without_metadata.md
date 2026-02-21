@@ -1,0 +1,51 @@
+# Example file (not rendered)
+
+That's where we are since so long...
+
+## These are headers, same as Markdown but you can make as much as you want
+
+### Like this
+
+######## Or this (but you need a .css file to handle more than 6 header sizes)
+
+-# It alos handle Discord-like subtexts
+
+!var{foo:bar} /' This file system can handle variables, they are invisible when defined and can be used all across the docuent, must be defined before use, are treated as text
+
+/'' These are comments by the way
+Multiline comments to be precise
+one ' for one-line comment, two ' ('') for a multiline comment
+and close it with ''/
+
+This is a basic text, and with the following syntax "!{foo}" you can get back the variable created earlier
+
+Note: you can disable getting variable by adding a "\\" before calling it.
+
+> [NOTE#000000
+> This is a Note, it can have various colors depending of the Keyword, like
+> - NOTE
+> - INFO
+> - WARNING
+> - DEPRECATED
+> - ERROR
+> - TRUE
+> - FALSE
+> - And many more ([See Documentation](no documentation yet))
+> Its Color can also depend of the # at the end of the note name, must be an integer of 6 numbers
+
+> This is a classical note, no style, juste like a paraphrase
+> And can be multiline too
+
+|Tables|Markdown-Like|
+|-|-|
+|Tables works|Like Markdown Does|
+
+Bu they can also contain separate whitelines like :
+
+|Column 1||Column 2|
+|-||-|
+|Object (0,0)||Object (0,1)|
+|-*
+|Object (1,0)||Object (1,1)|
+
+All the tables lines must finish by a pipe
