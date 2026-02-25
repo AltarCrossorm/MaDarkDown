@@ -6,7 +6,8 @@
 #include <string>
 #include <utility>
 
-#include "metadata.hpp"
+//#include "metadata.hpp"
+#include "objects/format_files.hpp"
 
 using namespace std;
 
@@ -16,7 +17,7 @@ int main(int argc, char* argv[])
 {
 	ifstream sourceFile;
 	ifstream styleFile;
-	Metadata md;
+	//Metadata md;
 	string fileCursor;
 	
 
@@ -27,7 +28,7 @@ int main(int argc, char* argv[])
 		styleFile.open(argv[2]);
 
 	if (!sourceFile.is_open()) {
-		cout << "Source file is not found." << endl;
+		cout << "Error : file \"" << argv[1] << "\" is not found." << endl;
 		exit(to_underlying(ExitValue::ERR_FILE_NOT_FOUND));
 	}
 
@@ -44,7 +45,7 @@ int main(int argc, char* argv[])
 	if(fileCursor == "---") // if the source contains metadata
 	{
 		cout << "file has metadata !" << endl;
-		md.generateMetadata(&sourceFile);
+		//md.generateMetadata(&sourceFile);
 	}
 	else
 	{
