@@ -21,23 +21,32 @@ private:
         int _pageCount;
         lang _language;
 
-        int generateNewMetadata(string key, string value);
-        int addExistingMetadata(string key, string value);
+        int Metadata::generateNewMetadata(string key, string value)
+        {
+                return 0;
+        }
+
+        int Metadata::addExistingMetadata(string key, string value)
+        {
+                return 0;
+        }
 
 public:
-        Metadata(string title = "",
-                 string author = "",
-                 string subject = "",
-                 string creatonDate = "",
-                 string modificationDate = "",
-                 string creator = "",
-                 string toolProducer = "MaDarkDown Parser",
-                 string PDFVersion = "",
-                 int pageCount = 0,
-                 lang language = lang::en_US);
-
-        ~Metadata();
-
+        Metadata::Metadata(string title,
+                           string author,
+                           string subject,
+                           string creatonDate,
+                           string modificationDate,
+                           string creator,
+                           string toolProducer,
+                           string PDFVersion,
+                           int pageCount,
+                           lang language)
+                           : _title(title),               _author(author),                     _subject(subject),
+                _creatonDate(creatonDate),   _modificationDate(modificationDate), _creator(creator), 
+                _toolProducer(toolProducer), _PDFVersion(PDFVersion)            , _pageCount(pageCount),
+                _language(language)
+                {}
 
         /**
          * @brief get all metadata, and set the input to the first line "after metadata"
@@ -45,6 +54,8 @@ public:
          * @param input 
          * @return int 0 if everything got good, 
          */
-        int generateMetadata(ifstream *input);
-
+        int Metadata::generateMetadata(ifstream *input)
+        {
+                return 0;
+        }
 };
