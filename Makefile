@@ -1,7 +1,7 @@
 .PHONY: all clean test debug log prepare
 
 CXX := g++
-CXXFLAGS = -Wall -Wextra -std=c++2c
+CXXFLAGS = -Wall -Wextra -std=c++26
 CXXLIBS := -lwkhtmltox
 
 
